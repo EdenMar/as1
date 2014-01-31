@@ -5,39 +5,26 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Item name"
+        android:layout_weight="1"
+        android:text="@string/title"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/oldStats"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.57"
-        android:orientation="vertical" >
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.92"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_weight="8" 
+        android:scrollbars="vertical" >
+    </ListView>
 
     <Button
         android:id="@+id/plus"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:onClick="plusOne"
+        android:layout_weight="1"
         android:text="@string/plus" />
 
 </LinearLayout>

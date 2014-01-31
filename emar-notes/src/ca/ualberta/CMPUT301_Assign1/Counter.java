@@ -1,18 +1,14 @@
 package ca.ualberta.CMPUT301_Assign1;
 
-import android.os.Bundle;
+import java.util.Date;
 
 
-public class Counter extends MainActivity
-{
+
+public abstract class Counter {
+
+	public int value;
+	public Date timestamp;
 	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-			setContentView(R.layout.counter);
-			
-			
-		
-	}
 
+	
 }

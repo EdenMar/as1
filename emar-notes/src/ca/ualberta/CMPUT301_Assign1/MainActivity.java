@@ -57,20 +57,20 @@ public class MainActivity extends Activity implements OnClickListener
 		switch (v.getId()) {
 			
 			case R.id.newCounter:
-				Intent intent = new Intent(this, Counter.class);
+				Intent newIntent = new Intent(this, CounterMenu.class);
 				
-				startActivity(intent);
+				startActivity(newIntent);
 				break;
 			
 			case R.id.loadCounter:
-				Intent intent2 = new Intent(this, Counter.class);
+				Intent loadIntent = new Intent(this, CounterMenu.class);
 				
-				startActivity(intent2);
+				startActivity(loadIntent);
 				break;
 		
 			case R.id.statistics:
-				Intent intent3 = new Intent(this, Statistics.class);
-				startActivity(intent3);
+				Intent statIntent = new Intent(this, Statistics.class);
+				startActivity(statIntent);
 				break;
 		}
 		
