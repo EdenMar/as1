@@ -10,7 +10,7 @@ public interface CounterInterface {
 
 	public int getValue();
 	
-	public void addTimestamp();
+	public void setTimestamp();
 	
 	public Date getTimestamp();
 }

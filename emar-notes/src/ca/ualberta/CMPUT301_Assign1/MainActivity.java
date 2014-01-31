@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.view.View.OnClickListener;
 
-public class MainActivity extends Activity implements OnClickListener 
+public class MainActivity extends Activity //implements OnClickListener
 {
 
 	
@@ -21,16 +21,27 @@ public class MainActivity extends Activity implements OnClickListener
 		setContentView(R.layout.activity_main);
 		
 		Button newCounter = (Button) findViewById(R.id.newCounter);
-		newCounter.setOnClickListener(this);
-		
 		Button loadCounter = (Button) findViewById(R.id.loadCounter);
-		loadCounter.setOnClickListener(this);
-		
 		Button statistics = (Button) findViewById(R.id.statistics);
-		statistics.setOnClickListener(this);
+		
+		newCounter.setOnClickListener(new OnClickListener()
+		{
+			
+			@Override
+			public void onClick(View v)
+			{
+			
+				Intent newIntent = new Intent(getApplicationContext(), CounterMenu.class);
+				startActivity(newIntent);
+				
+			}
+		});
 		
 		
+		//loadCounter.setOnClickListener(this);
 		
+		
+		//statistics.setOnClickListener(this);
 		
 		
 		
@@ -51,7 +62,7 @@ public class MainActivity extends Activity implements OnClickListener
 
 
 
-	@Override
+/*	@Override
 	public void onClick(View v)
 	{
 		switch (v.getId()) {
@@ -75,7 +86,7 @@ public class MainActivity extends Activity implements OnClickListener
 		}
 		
 		
-	}
+	} */ 
 
 
 
