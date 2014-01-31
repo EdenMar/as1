@@ -107,19 +107,27 @@ public class CounterMenu extends MainActivity
          }
  }	
 	 
-	 //methods used to implement the CounterInterface
+	 //methods used to implement the CounterInterface, see CounterInterface.java to see more about
+	 //each method
 	
 	 public class Counter implements CounterInterface {
 		
 		public int value;
 		 public Date timestamp;
 		 
+		 
 		 public Counter() {
+			 
+			 //default constructor, meant for new counters
+			 
 			 this.value = 0;
 			 setTimestamp();			 
 		 }
 		 
 		 public Counter(int value, Date timestamp) {
+			 
+			 //constructor meant for old counters when Counter was passed some value and timestamp
+			 
 			 this.value = value;
 			 this.timestamp = timestamp;
 		 }

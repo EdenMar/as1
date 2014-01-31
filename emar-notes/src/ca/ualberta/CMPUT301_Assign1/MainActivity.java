@@ -60,7 +60,7 @@ public class MainActivity extends Activity //implements OnClickListener
 	}
 
 
-
+    //tried playing with a switch statement, wasn't able to put it to use
 
 /*	@Override
 	public void onClick(View v)
