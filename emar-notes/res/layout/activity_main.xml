@@ -21,12 +21,12 @@
         android:id="@+id/loadCounter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Load counter" />
+        android:text="Load counter(unusable)" />
 
     <Button
         android:id="@+id/statistics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Statistics" />
+        android:text="Statistics(unusable)" />
 
 </LinearLayout>

@@ -78,7 +78,7 @@ public class CounterMenu extends MainActivity
             FileInputStream fis = openFileInput(FILENAME);
             BufferedReader in = new BufferedReader(new InputStreamReader(fis));
             String line = in.readLine();
-            while (line != null) {
+            while (line != null) {	
                     stats.add(line);
                     line = in.readLine();
             	}
@@ -95,7 +95,7 @@ public class CounterMenu extends MainActivity
          try {
                  FileOutputStream fos = openFileOutput(FILENAME,
                                  Context.MODE_APPEND);
-                 fos.write(new String(date.toString() + " | " + text)
+                 fos.write(new String(date.toString() + " | " + text + "\n")
                                  .getBytes());
                  fos.close();
          } catch (FileNotFoundException e) {
